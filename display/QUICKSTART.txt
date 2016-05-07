@@ -1,0 +1,32 @@
+screenbase_unity_video - QUICK START
+
+Author:  Steve North
+Author URI:  http://www.cs.nott.ac.uk/~pszsn/
+License: AGPLv3 or later
+License URI: http://www.gnu.org/licenses/agpl-3.0.en.html
+Can: Commercial Use, Modify, Distribute, Place Warranty
+Can't: Sublicence, Hold Liable
+Must: Include Copyright, Include License, State Changes, Disclose Source
+This research was originally funded in the UK under EPSRC grant reference EP/I031839/1 and title ‘Exploring the potential of networked urban screens for communities and culture’.
+
+Copyright (c) 2015, The University of Nottingham
+
+
+Just want to put together a quick and dirty program of remotely hosted videos?
+
+Format:
+
+http://<your site>/<your directory containing video player app>/?&remote=<'y' or 'n'>&vids=<MP4 video1>~~<MP4 video2>~~<MP4 video3>&sharing=<'y' or 'n'>&subtitles=<'y' or 'n'>&loc=<location code used by 'Screens in the Wild' to identify screen node>&info=<URL encoded text to display when info button is touched>&branding=<URL encoded text for short title to appear on-screen>&call=<URL encoded text to appear under the video>&skin=<JPG image to skin app with>
+
+To manually encode URLs or Info text, use: http://meyerweb.com/eric/tools/dencoder/
+
+or..use the ScreenBase screenbase_unity_video module to encode everything for you. This will work locally by running Create's index.html or try it at:
+
+http://www.cs.nott.ac.uk/sitw/experiences/screenbase/videoplayer/create/stable/
+
+
+Working example of a video program app from the 'Screens in the Wild'installation of screenbase_unity_video, using remotely hosted videos:
+
+http://www.cs.nott.ac.uk/sitw/experiences/screenbase/videoplayer/display/stable/?vids=https%3A%2F%2Fia700408.us.archive.org%2F31%2Fitems%2FThePeanutVendor1933%2FThePeanutVendor1933_512kb.mp4~~https%3A%2F%2Farchive.org%2Fdownload%2FFelixAprilMaze%2Ffelix_april_maze_instr_512kb.mp4~~https%3A%2F%2Farchive.org%2Fdownload%2FTomAndJerryInANightBeforeChristmas%2FTomAndJerry-003-NightBeforeChristmas1941.mp4~~https%3A%2F%2Farchive.org%2Fdownload%2Fsecret_agent%2Fsecret_agent_512kb.mp4&info=%3Ch1%3EInfo%3C%2Fh1%3EVideos%20from%20the%20Internet%20Archive%20-%20%3CBR%3EPublic%20Domain%20Moving%20Image%20Collection&branding=The%20Public%20Domain%20Show&skin=http%3A%2F%2Fwww.cs.nott.ac.uk%2Fsitw%2Fexperiences%2Fimages%2Fmisc%2Finternet_archive.jpg&subtitles=n&sharing=y&remote=y&loc=NA
+
+NOTE: it's possible that hosted videos may no longer be available in above answer. Try clicking the right arrow button to 
